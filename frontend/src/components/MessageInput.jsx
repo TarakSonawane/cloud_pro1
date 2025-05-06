@@ -5,9 +5,7 @@ import toast from "react-hot-toast";
 import CryptoJS from "crypto-js";
 
 
-const SECRET_PASSPHRASE = import.meta.env.VITE_SECRET_PASSPHRASE; // can be user-provided or stored securely
-console.log("Tarak Debug SECRET_PASSPHRASE:", import.meta.env.VITE_SECRET_PASSPHRASE);
-
+const SECRET_PASSPHRASE = "MYSecret"; // can be user-provided or stored securely
 // Encrypt
 const encryptText = (plainText) => 
   {
