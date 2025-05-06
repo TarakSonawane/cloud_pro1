@@ -13,7 +13,7 @@ import { app, server } from "./lib/socket.js";
 
 dotenv.config();
 
-const PORT = os.getenv("PORT");
+const PORT = process.env.PORT;
 console.log("FETCHED PORT:" + PORT);
 
 const __dirname = path.resolve();
