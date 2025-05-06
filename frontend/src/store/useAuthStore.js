@@ -3,7 +3,7 @@ import { axiosInstance } from "../lib/axios.js";
 import toast from "react-hot-toast";
 import { io } from "socket.io-client";
 
-const BASE_URL = "backend-cloud-project-d7bjbkd3fhd3ajbc.canadacentral-01.azurewebsites.net";
+const BASE_URL = "https://backend-cloud-project-d7bjbkd3fhd3ajbc.canadacentral-01.azurewebsites.net";
 
 export const useAuthStore = create((set, get) => ({
   authUser: null,
