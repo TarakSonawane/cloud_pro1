@@ -20,7 +20,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://purple-island-06cc68e00.6.azurestaticapps.net",
     credentials: true,
   })
 );
