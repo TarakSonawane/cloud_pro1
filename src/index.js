@@ -18,6 +18,13 @@ console.log("FETCHED PORT:" + PORT);
 
 const __dirname = path.resolve();
 
+process.on('uncaughtException', err => {
+  console.error('TTTTTTTTTTARAK Uncaught Exception:', err);
+});
+process.on('unhandledRejection', reason => {
+  console.error('TTTTTTTTTTARAK Unhandled Rejection:', reason);
+});
+
 app.use(express.json());
 app.use(cookieParser());
 app.use(
@@ -38,6 +45,12 @@ if (process.env.NODE_ENV == "production") {
   });
 }
 
+process.on('uncaughtException', err => {
+  console.error('TTTTTTTTTTARAK Uncaught Exception:', err);
+});
+process.on('unhandledRejection', reason => {
+  console.error('TTTTTTTTTTARAK Unhandled Rejection:', reason);
+});
 server.listen(PORT, () => {
   console.log("server is running on PORT:" + PORT);
   connectDB();
