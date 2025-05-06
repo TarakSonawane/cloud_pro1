@@ -8,10 +8,8 @@ import { useAuthStore } from "../store/useAuthStore";
 import { formatMessageTime } from "../lib/utils";
 
 import CryptoJS from "crypto-js";
-console.log("Tarak Debug SECRET_PASSPHRASE:", import.meta.env.VITE_SECRET_PASSPHRASE);
 
-
-const SECRET_PASSPHRASE = import.meta.env.VITE_SECRET_PASSPHRASE;// can be user-provided or stored securely
+const SECRET_PASSPHRASE = "MYSecret";// can be user-provided or stored securely
 // Decrypt
 const decryptText = (encryptedBase64) => {
   try {
